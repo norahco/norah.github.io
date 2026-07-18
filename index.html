@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Power Platform portfolio featuring Power Apps, Power BI, and workflow automation." />
+  <title>Power Platform Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#home" aria-label="Homepage">
+        <span class="brand-mark">N</span>
+        <span class="brand-copy">
+          <strong>Your Name</strong>
+          <small>Power Platform Portfolio</small>
+        </span>
+      </a>
+
+      <button class="menu-button" id="menuButton" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero shell" id="home">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">POWER APPS · POWER BI · AUTOMATION</span>
+        <h1>Building calm digital experiences for complex work.</h1>
+        <p>
+          I design business applications, dashboards, and workflows that make information clearer and everyday tasks easier to manage.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">View my work</a>
+          <a class="button button-secondary" href="#process">See my process</a>
+        </div>
+      </div>
+
+      <div class="hero-product reveal" aria-label="Portfolio product preview">
+        <div class="dashboard-window">
+          <div class="window-topbar">
+            <span class="window-title">Event Dashboard</span>
+            <span class="window-pill">Overview</span>
+          </div>
+
+          <div class="dashboard-layout">
+            <aside class="mini-sidebar">
+              <span class="mini-logo">N</span>
+              <span class="sidebar-dot active"></span>
+              <span class="sidebar-dot"></span>
+              <span class="sidebar-dot"></span>
+              <span class="sidebar-dot"></span>
+            </aside>
+
+            <div class="dashboard-content">
+              <div class="kpi-row">
+                <article class="mini-kpi">
+                  <span>Total events</span>
+                  <strong>33</strong>
+                </article>
+                <article class="mini-kpi">
+                  <span>Upcoming</span>
+                  <strong>8</strong>
+                </article>
+                <article class="mini-kpi">
+                  <span>In progress</span>
+                  <strong>4</strong>
+                </article>
+              </div>
+
+              <div class="chart-row">
+                <article class="line-card">
+                  <span>Event activity</span>
+                  <svg viewBox="0 0 320 120" role="img" aria-label="Simple event activity line chart">
+                    <path class="grid-line" d="M0 94 H320 M0 60 H320 M0 26 H320" />
+                    <path class="chart-line" d="M10 88 C50 78, 62 48, 105 64 S164 96, 194 58 S252 28, 310 40" />
+                    <circle class="chart-point" cx="310" cy="40" r="5" />
+                  </svg>
+                </article>
+
+                <article class="status-card">
+                  <span>Event status</span>
+                  <div class="donut" aria-label="Status donut chart"></div>
+                  <div class="legend">
+                    <span><i class="legend-a"></i>Active</span>
+                    <span><i class="legend-b"></i>Completed</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-window">
+          <div class="app-bar">
+            <span>Event Portal</span>
+            <span class="app-actions">⌕ ＋</span>
+          </div>
+          <div class="app-body">
+            <div class="app-nav">
+              <span class="app-nav-item active">Home</span>
+              <span class="app-nav-item">Requests</span>
+              <span class="app-nav-item">Events</span>
+            </div>
+            <div class="app-main">
+              <div class="welcome-row">
+                <div>
+                  <span>Welcome back</span>
+                  <strong>Here is your workspace.</strong>
+                </div>
+                <button type="button">New request</button>
+              </div>
+              <div class="app-stats">
+                <article><span>My requests</span><strong>6</strong></article>
+                <article><span>Not started</span><strong>3</strong></article>
+                <article><span>In progress</span><strong>2</strong></article>
+              </div>
+              <div class="request-row">
+                <div>
+                  <strong>RFQ request</strong>
+                  <span>Waiting for approval</span>
+                </div>
+                <span class="status-pill">In progress</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <svg class="connector" viewBox="0 0 220 120" aria-hidden="true">
+          <path d="M10 20 C88 18, 80 102, 210 96" />
+          <circle cx="10" cy="20" r="5" />
+          <circle cx="210" cy="96" r="5" />
+        </svg>
+      </div>
+    </section>
+
+    <section class="capability-strip shell reveal" aria-label="Capabilities">
+      <article>
+        <span class="capability-icon pink">▦</span>
+        <div><strong>Data clarity</strong><small>Interactive Power BI reporting</small></div>
+      </article>
+      <article>
+        <span class="capability-icon green">▱</span>
+        <div><strong>Process simplicity</strong><small>Useful Power Apps experiences</small></div>
+      </article>
+      <article>
+        <span class="capability-icon grey">↗</span>
+        <div><strong>Connected workflows</strong><small>Automation with clear ownership</small></div>
+      </article>
+    </section>
+
+    <section class="work-section shell" id="work">
+      <div class="section-heading reveal">
+        <span class="eyebrow">FEATURED PROJECT</span>
+        <h2>Event Management & Workflow Portal</h2>
+        <p>One connected experience for events, requests, documents, approvals, and reporting.</p>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-tabs" role="tablist" aria-label="Project preview tabs">
+          <button class="tab-button active" type="button" data-tab="apps" role="tab" aria-selected="true">Power Apps</button>
+          <button class="tab-button" type="button" data-tab="bi" role="tab" aria-selected="false">Power BI</button>
+          <button class="tab-button" type="button" data-tab="flow" role="tab" aria-selected="false">Workflow</button>
+        </div>
+
+        <div class="tab-panel active" id="apps" role="tabpanel">
+          <div class="panel-copy">
+            <span class="panel-number">01</span>
+            <h3>A clear operational home</h3>
+            <p>Users can view events, submit requests, track progress, and open the actions that need their attention.</p>
+            <ul>
+              <li>Home overview</li>
+              <li>Request services</li>
+              <li>Visible status and waiting time</li>
+            </ul>
+          </div>
+          <div class="panel-preview app-preview-large">
+            <div class="preview-topbar"><span>Event Portal</span><span>•••</span></div>
+            <div class="preview-grid">
+              <aside>
+                <span class="preview-nav active">Home</span>
+                <span class="preview-nav">Requests</span>
+                <span class="preview-nav">Events</span>
+                <span class="preview-nav">Feedback</span>
+              </aside>
+              <div class="preview-main">
+                <div class="preview-title-row"><strong>Welcome back</strong><button type="button">Create request</button></div>
+                <div class="preview-cards"><span></span><span></span><span></span></div>
+                <div class="preview-list"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="bi" role="tabpanel">
+          <div class="panel-copy">
+            <span class="panel-number">02</span>
+            <h3>Focused performance insights</h3>
+            <p>The dashboard keeps event readiness, participation, timing, and feedback in one simple view.</p>
+            <ul>
+              <li>Event overview</li>
+              <li>Readiness tracking</li>
+              <li>Interactive event details</li>
+            </ul>
+          </div>
+          <div class="panel-preview dashboard-preview-large">
+            <div class="preview-topbar"><span>Event Analytics</span><span>Last updated today</span></div>
+            <div class="dashboard-preview-body">
+              <div class="preview-kpis"><span></span><span></span><span></span><span></span></div>
+              <div class="preview-chart-grid"><span class="wide"></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="flow" role="tabpanel">
+          <div class="panel-copy">
+            <span class="panel-number">03</span>
+            <h3>A visible request journey</h3>
+            <p>Every stage shows who owns the request, what happened before, and what action comes next.</p>
+            <ul>
+              <li>Approval and return actions</li>
+              <li>Timeline and attachments</li>
+              <li>Automated notifications</li>
+            </ul>
+          </div>
+          <div class="panel-preview workflow-preview">
+            <div class="workflow-step done"><span>1</span><div><strong>Submitted</strong><small>Request created</small></div></div>
+            <div class="workflow-line done"></div>
+            <div class="workflow-step done"><span>2</span><div><strong>Reviewed</strong><small>Approved by manager</small></div></div>
+            <div class="workflow-line active"></div>
+            <div class="workflow-step active"><span>3</span><div><strong>In action</strong><small>Waiting for processor</small></div></div>
+            <div class="workflow-line"></div>
+            <div class="workflow-step"><span>4</span><div><strong>Completed</strong><small>Final confirmation</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section" id="process">
+      <div class="shell process-inner">
+        <div class="section-heading reveal">
+          <span class="eyebrow">HOW I WORK</span>
+          <h2>Simple steps, thoughtful decisions.</h2>
+        </div>
+        <div class="process-grid">
+          <article class="process-card reveal"><span>01</span><h3>Understand</h3><p>Learn the process, users, and the real operational problem.</p></article>
+          <article class="process-card reveal"><span>02</span><h3>Design</h3><p>Create a clear experience and decide what information matters most.</p></article>
+          <article class="process-card reveal"><span>03</span><h3>Build</h3><p>Connect the app, workflow, data, and dashboard into one solution.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section shell" id="contact">
+      <div class="contact-card reveal">
+        <div>
+          <span class="eyebrow">LET'S CONNECT</span>
+          <h2>Interested in Power Platform work?</h2>
+          <p>Let’s talk about dashboards, business applications, and workflow automation.</p>
+        </div>
+        <a class="button button-primary" href="mailto:your-email@example.com">Contact me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-wrap">
+      <span>© <span id="year"></span> Your Name</span>
+      <span>Built with GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
