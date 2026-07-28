@@ -182,6 +182,25 @@ h2 { font-size: clamp(32px, 4vw, 46px); }
   .note-card{left:18px;right:18px;top:40px;padding:24px}
   .contact-card{align-items:flex-start;flex-direction:column}
 }
+
+/* Project cover image */
+.project-cover {
+  min-height: 0;
+  padding: 0;
+  aspect-ratio: 5 / 3;
+  background: #FFFFFF;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.project-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 </style>
 </head>
 <body>
@@ -238,21 +257,8 @@ h2 { font-size: clamp(32px, 4vw, 46px); }
 
   <section class="section section-soft">
     <div class="shell selected-work">
-      <div class="project-art" aria-hidden="true">
-        <div class="project-browser">
-          <div class="browser-top"><span></span><span></span><span></span></div>
-          <div class="project-ui">
-            <div class="project-side"></div>
-            <div class="project-main">
-              <div class="project-row">
-                <div class="project-box"></div>
-                <div class="project-box"></div>
-                <div class="project-box"></div>
-              </div>
-              <div class="project-large"></div>
-            </div>
-          </div>
-        </div>
+      <div class="project-art project-cover">
+        <img src="assets/Cover.jpg" alt="Event Management System dashboard preview">
       </div>
 
       <div class="project-copy">
