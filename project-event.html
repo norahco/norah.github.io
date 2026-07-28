@@ -414,6 +414,33 @@ h2 { font-size: clamp(32px, 4vw, 46px); }
   }
 }
 
+
+/* Responsive Power BI embed based on the selected 1024 × 612 size */
+.dashboard-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1024 / 612;
+  overflow: hidden;
+  background: var(--stone);
+}
+
+.dashboard-frame {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  border: 0;
+  background: var(--stone);
+}
+
+@media (max-width: 620px) {
+  .dashboard-embed {
+    aspect-ratio: 1024 / 612;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -483,12 +510,18 @@ h2 { font-size: clamp(32px, 4vw, 46px); }
           <strong>Event Dashboard</strong>
           <a class="open-dashboard" id="openDashboard" target="_blank" rel="noopener">Open full dashboard</a>
         </div>
-        <iframe
-          class="dashboard-frame"
-          id="powerBiFrame"
-          title="Interactive Power BI dashboard"
-          allowfullscreen="true">
-        </iframe>
+        <div class="dashboard-embed">
+          <iframe
+            class="dashboard-frame"
+            id="powerBiFrame"
+            title="Events"
+            width="1024"
+            height="612"
+            src="https://app.fabric.microsoft.com/view?r=eyJrIjoiZjZhYWI2Y2MtMGVmNS00NDM0LWI1OTEtODYxMWRjMjMxNTM5IiwidCI6IjMyN2I1MjE2LTkwNTMtNDQ4Yi1iZDI2LWYxYWViZGEzN2Q4NiJ9"
+            frameborder="0"
+            allowfullscreen="true">
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -538,7 +571,7 @@ h2 { font-size: clamp(32px, 4vw, 46px); }
 
 <script>
   const CONFIG = {
-    powerBiUrl: "https://app.powerbi.com/groups/me/reports/4766295a-11a1-42f3-ae4f-16c86b000fe2?ctid=350ffe67-1872-4323-ae90-be3e70195eb1&pbi_source=linkShare",
+    powerBiUrl: "https://app.fabric.microsoft.com/view?r=eyJrIjoiZjZhYWI2Y2MtMGVmNS00NDM0LWI1OTEtODYxMWRjMjMxNTM5IiwidCI6IjMyN2I1MjE2LTkwNTMtNDQ4Yi1iZDI2LWYxYWViZGEzN2Q4NiJ9",
     appScreens: [
       { label: "Home", image: "assets/app-home.png" },
       { label: "Requests", image: "assets/app-requests.png" },
