@@ -201,6 +201,707 @@ h2 { font-size: clamp(32px, 4vw, 46px); }
   object-fit: cover;
 }
 
+
+/* Space Indigo palette
+   50–100: page and soft surfaces
+   200–300: borders and subtle decoration
+   400–500: secondary accents
+   600–700: supporting text and hover states
+   800–950: headings, primary buttons, and strong sections
+*/
+:root {
+  --space-indigo-50: #f0f0f4;
+  --space-indigo-100: #e1e1ea;
+  --space-indigo-200: #c3c3d5;
+  --space-indigo-300: #a5a5c0;
+  --space-indigo-400: #8888aa;
+  --space-indigo-500: #6a6a95;
+  --space-indigo-600: #555577;
+  --space-indigo-700: #3f3f5a;
+  --space-indigo-800: #2a2a3c;
+  --space-indigo-900: #15151e;
+  --space-indigo-950: #0f0f15;
+
+  --white: #ffffff;
+  --ink: var(--space-indigo-900);
+  --muted: var(--space-indigo-600);
+  --pink: var(--space-indigo-500);
+  --pink-soft: var(--space-indigo-100);
+  --sage: var(--space-indigo-400);
+  --sage-soft: var(--space-indigo-50);
+  --stone: var(--space-indigo-50);
+  --line: var(--space-indigo-200);
+  --shadow:
+    0 18px 46px rgba(15, 15, 21, 0.10),
+    0 4px 14px rgba(63, 63, 90, 0.05);
+}
+
+body {
+  background: #ffffff;
+  color: var(--space-indigo-900);
+}
+
+.nav {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom-color: var(--space-indigo-200);
+}
+
+.brand-mark {
+  background: var(--space-indigo-100);
+  color: var(--space-indigo-900);
+  box-shadow: inset 0 0 0 1px rgba(63, 63, 90, 0.06);
+}
+
+.brand-copy strong,
+h1,
+h2,
+h3 {
+  color: var(--space-indigo-900);
+}
+
+.brand-copy span,
+.lead,
+.page-head p,
+.project-head p,
+.project-copy p,
+.about-mini p,
+.work-card p,
+.work-section-head p,
+.story-card p,
+.contact-card p,
+.contact-strip p {
+  color: var(--space-indigo-600);
+}
+
+.nav-links a:hover,
+.nav-links a.active,
+.back-link:hover,
+.footer-links a:hover {
+  color: var(--space-indigo-500);
+}
+
+.resume-link,
+.button-primary,
+.open-dashboard {
+  background: var(--space-indigo-800);
+  color: #ffffff !important;
+  box-shadow: 0 10px 24px rgba(42, 42, 60, 0.16);
+}
+
+.resume-link:hover,
+.button-primary:hover,
+.open-dashboard:hover {
+  background: var(--space-indigo-950);
+}
+
+.button-secondary {
+  border-color: var(--space-indigo-200);
+  background: #ffffff;
+  color: var(--space-indigo-800);
+}
+
+.button-secondary:hover {
+  border-color: var(--space-indigo-400);
+  background: var(--space-indigo-50);
+}
+
+.button-pink {
+  background: var(--space-indigo-100);
+  color: var(--space-indigo-800);
+}
+
+.kicker {
+  background: var(--space-indigo-100);
+  color: var(--space-indigo-700);
+  box-shadow: inset 0 0 0 1px rgba(63, 63, 90, 0.06);
+}
+
+.section-soft {
+  background: var(--space-indigo-50);
+}
+
+.personal-note {
+  background:
+    radial-gradient(circle at 86% 14%, rgba(136, 136, 170, 0.25), transparent 32%),
+    linear-gradient(145deg, #ffffff 0%, var(--space-indigo-50) 100%);
+}
+
+.personal-note::before {
+  background: var(--space-indigo-200);
+}
+
+.personal-note::after {
+  background: var(--space-indigo-100);
+}
+
+.note-card,
+.work-card,
+.story-card,
+.dashboard-wrap,
+.app-tab,
+.contact-card,
+.contact-strip,
+.card {
+  border-color: var(--space-indigo-200);
+}
+
+.note-card {
+  background: var(--space-indigo-800);
+  border-color: transparent;
+  box-shadow:
+    0 24px 54px rgba(15, 15, 21, 0.18),
+    0 6px 18px rgba(63, 63, 90, 0.10);
+}
+
+.note-card small,
+.note-card h3,
+.note-card p {
+  color: #ffffff;
+}
+
+.note-card small,
+.note-card p {
+  opacity: 0.76;
+}
+
+.note-tags span {
+  background: rgba(225, 225, 234, 0.13);
+  color: var(--space-indigo-100);
+}
+
+.note-tags span:nth-child(2) {
+  background: rgba(165, 165, 192, 0.17);
+  color: #ffffff;
+}
+
+.note-tags span:nth-child(3) {
+  background: rgba(106, 106, 149, 0.30);
+  color: #ffffff;
+}
+
+.project-art,
+.work-preview {
+  background:
+    radial-gradient(circle at 88% 12%, rgba(106, 106, 149, 0.20), transparent 34%),
+    linear-gradient(145deg, var(--space-indigo-50), var(--space-indigo-100));
+}
+
+.project-side,
+.preview-side {
+  background: var(--space-indigo-800);
+}
+
+.project-box:nth-child(1),
+.preview-box:nth-child(1) {
+  background: var(--space-indigo-300);
+}
+
+.project-box:nth-child(2),
+.preview-box:nth-child(2) {
+  background: var(--space-indigo-400);
+}
+
+.project-box:nth-child(3),
+.preview-box:nth-child(3) {
+  background: var(--space-indigo-600);
+}
+
+.project-large,
+.preview-large {
+  background:
+    linear-gradient(135deg, var(--space-indigo-100), var(--space-indigo-300));
+}
+
+.work-meta span,
+.project-tags span {
+  background: var(--space-indigo-100);
+  color: var(--space-indigo-700);
+}
+
+.work-meta span:nth-child(2),
+.project-tags span:nth-child(2) {
+  background: var(--space-indigo-200);
+  color: var(--space-indigo-800);
+}
+
+.work-meta span:nth-child(3),
+.project-tags span:nth-child(3) {
+  background: var(--space-indigo-700);
+  color: #ffffff;
+}
+
+.story-card:nth-child(1) {
+  background: #ffffff;
+}
+
+.story-card:nth-child(2) {
+  background: var(--space-indigo-100);
+}
+
+.story-card:nth-child(3) {
+  background: var(--space-indigo-700);
+}
+
+.story-card:nth-child(3) h3,
+.story-card:nth-child(3) p {
+  color: #ffffff;
+}
+
+.story-card:nth-child(3) p {
+  opacity: 0.76;
+}
+
+.dashboard-toolbar {
+  background: #ffffff;
+}
+
+.dashboard-embed,
+.dashboard-frame {
+  background: var(--space-indigo-50);
+}
+
+.app-tab {
+  background: #ffffff;
+  color: var(--space-indigo-800);
+  box-shadow:
+    0 10px 24px rgba(42, 42, 60, 0.07),
+    0 3px 9px rgba(106, 106, 149, 0.05);
+}
+
+.app-tab:hover {
+  background: var(--space-indigo-100);
+  color: var(--space-indigo-900);
+  box-shadow:
+    0 14px 28px rgba(42, 42, 60, 0.10),
+    0 4px 10px rgba(106, 106, 149, 0.06);
+}
+
+.app-tab.active {
+  background: var(--space-indigo-800);
+  color: #ffffff;
+  box-shadow:
+    0 14px 30px rgba(15, 15, 21, 0.18),
+    0 4px 12px rgba(106, 106, 149, 0.08);
+}
+
+.app-screen img,
+.project-cover,
+.work-cover {
+  box-shadow:
+    0 16px 38px rgba(15, 15, 21, 0.10),
+    0 4px 12px rgba(106, 106, 149, 0.06);
+}
+
+.contact-card,
+.contact-strip {
+  background:
+    linear-gradient(135deg, var(--space-indigo-100), var(--space-indigo-50));
+}
+
+.contact-card::before,
+.contact-strip::before {
+  background: var(--space-indigo-600);
+}
+
+.footer {
+  border-top-color: var(--space-indigo-200);
+}
+
+.menu-button {
+  border-color: var(--space-indigo-200);
+  background: var(--space-indigo-50);
+  color: var(--space-indigo-800);
+}
+
+
+/* Twilight Indigo theme — full scale usage */
+:root {
+  --twilight-indigo-50: #EDF0F7;
+  --twilight-indigo-100: #DBE1F0;
+  --twilight-indigo-200: #B7C2E1;
+  --twilight-indigo-300: #93A4D2;
+  --twilight-indigo-400: #6F85C3;
+  --twilight-indigo-500: #4B67B4;
+  --twilight-indigo-600: #3C5290;
+  --twilight-indigo-700: #2D3E6C;
+  --twilight-indigo-800: #1E2948;
+  --twilight-indigo-900: #0F1524;
+  --twilight-indigo-950: #0B0E19;
+
+  --white: #FFFFFF;
+  --ink: var(--twilight-indigo-900);
+  --muted: var(--twilight-indigo-600);
+  --pink: var(--twilight-indigo-500);
+  --pink-soft: var(--twilight-indigo-100);
+  --sage: var(--twilight-indigo-400);
+  --sage-soft: var(--twilight-indigo-50);
+  --stone: var(--twilight-indigo-50);
+  --line: var(--twilight-indigo-200);
+  --shadow:
+    0 18px 46px rgba(15, 21, 36, 0.12),
+    0 5px 16px rgba(75, 103, 180, 0.08);
+}
+
+body {
+  background: #FFFFFF;
+  color: var(--twilight-indigo-900);
+}
+
+.nav {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom-color: var(--twilight-indigo-200);
+}
+
+.brand-mark {
+  background: var(--twilight-indigo-600);
+  color: #FFFFFF;
+  box-shadow: 0 8px 20px rgba(60, 82, 144, 0.22);
+}
+
+.brand-copy strong,
+h1,
+h2,
+h3 {
+  color: var(--twilight-indigo-900);
+}
+
+.brand-copy span,
+.lead,
+.page-head p,
+.project-head p,
+.project-copy p,
+.about-mini p,
+.work-card p,
+.work-section-head p,
+.story-card p,
+.contact-card p,
+.contact-strip p {
+  color: var(--twilight-indigo-600);
+}
+
+.nav-links a {
+  color: var(--twilight-indigo-800);
+}
+
+.nav-links a:hover {
+  color: var(--twilight-indigo-500);
+}
+
+.nav-links a.active {
+  color: var(--twilight-indigo-700);
+}
+
+.resume-link,
+.button-primary,
+.open-dashboard {
+  background: var(--twilight-indigo-600);
+  color: #FFFFFF !important;
+  border: 0;
+  box-shadow: 0 10px 24px rgba(60, 82, 144, 0.22);
+}
+
+.resume-link:hover,
+.button-primary:hover,
+.open-dashboard:hover {
+  background: var(--twilight-indigo-700);
+  box-shadow: 0 13px 28px rgba(45, 62, 108, 0.24);
+}
+
+.resume-link:active,
+.button-primary:active,
+.open-dashboard:active {
+  background: var(--twilight-indigo-800);
+  transform: translateY(1px);
+}
+
+.resume-link[disabled],
+.button-primary[disabled],
+.open-dashboard[disabled],
+.resume-link.disabled,
+.button-primary.disabled,
+.open-dashboard.disabled {
+  background: var(--twilight-indigo-300);
+  color: #FFFFFF !important;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.button-secondary {
+  background: var(--twilight-indigo-100);
+  color: var(--twilight-indigo-900);
+  border-color: transparent;
+}
+
+.button-secondary:hover {
+  background: var(--twilight-indigo-200);
+  color: var(--twilight-indigo-900);
+}
+
+.button-secondary:active {
+  background: var(--twilight-indigo-300);
+}
+
+.button-secondary[disabled],
+.button-secondary.disabled {
+  background: var(--twilight-indigo-200);
+  color: #FFFFFF;
+  pointer-events: none;
+}
+
+.button-tertiary {
+  background: transparent;
+  color: var(--twilight-indigo-600);
+  border: 1px solid var(--twilight-indigo-500);
+}
+
+.button-tertiary:hover {
+  background: var(--twilight-indigo-50);
+  color: var(--twilight-indigo-700);
+  border-color: var(--twilight-indigo-600);
+}
+
+.button-tertiary:active {
+  background: var(--twilight-indigo-100);
+  color: var(--twilight-indigo-800);
+  border-color: var(--twilight-indigo-700);
+}
+
+.button-tertiary[disabled],
+.button-tertiary.disabled {
+  color: var(--twilight-indigo-300);
+  border-color: var(--twilight-indigo-200);
+  pointer-events: none;
+}
+
+.kicker {
+  background: var(--twilight-indigo-100);
+  color: var(--twilight-indigo-700);
+  box-shadow: inset 0 0 0 1px rgba(75, 103, 180, 0.10);
+}
+
+.section-soft {
+  background: var(--twilight-indigo-50);
+}
+
+.personal-note {
+  background:
+    radial-gradient(circle at 88% 10%, rgba(75, 103, 180, 0.22), transparent 35%),
+    linear-gradient(145deg, #FFFFFF 0%, var(--twilight-indigo-50) 100%);
+}
+
+.personal-note::before {
+  background: var(--twilight-indigo-400);
+  opacity: 0.18;
+}
+
+.personal-note::after {
+  background: var(--twilight-indigo-200);
+  opacity: 0.72;
+}
+
+.note-card {
+  background:
+    linear-gradient(145deg, var(--twilight-indigo-800), var(--twilight-indigo-950));
+  border: 0;
+  box-shadow:
+    0 24px 54px rgba(11, 14, 25, 0.24),
+    0 7px 20px rgba(75, 103, 180, 0.13);
+}
+
+.note-card small {
+  color: var(--twilight-indigo-300);
+}
+
+.note-card h3 {
+  color: #FFFFFF;
+}
+
+.note-card p {
+  color: var(--twilight-indigo-100);
+}
+
+.note-tags span {
+  background: rgba(219, 225, 240, 0.12);
+  color: var(--twilight-indigo-100);
+}
+
+.note-tags span:nth-child(2) {
+  background: rgba(111, 133, 195, 0.24);
+  color: #FFFFFF;
+}
+
+.note-tags span:nth-child(3) {
+  background: rgba(75, 103, 180, 0.34);
+  color: #FFFFFF;
+}
+
+.project-art,
+.work-preview {
+  background:
+    radial-gradient(circle at 90% 12%, rgba(75, 103, 180, 0.28), transparent 32%),
+    linear-gradient(145deg, var(--twilight-indigo-50), var(--twilight-indigo-100));
+}
+
+.project-side,
+.preview-side {
+  background: var(--twilight-indigo-800);
+}
+
+.project-box:nth-child(1),
+.preview-box:nth-child(1) {
+  background: var(--twilight-indigo-300);
+}
+
+.project-box:nth-child(2),
+.preview-box:nth-child(2) {
+  background: var(--twilight-indigo-500);
+}
+
+.project-box:nth-child(3),
+.preview-box:nth-child(3) {
+  background: var(--twilight-indigo-700);
+}
+
+.project-large,
+.preview-large {
+  background:
+    linear-gradient(135deg, var(--twilight-indigo-200), var(--twilight-indigo-500));
+}
+
+.work-meta span,
+.project-tags span {
+  background: var(--twilight-indigo-100);
+  color: var(--twilight-indigo-700);
+}
+
+.work-meta span:nth-child(2),
+.project-tags span:nth-child(2) {
+  background: var(--twilight-indigo-300);
+  color: var(--twilight-indigo-900);
+}
+
+.work-meta span:nth-child(3),
+.project-tags span:nth-child(3) {
+  background: var(--twilight-indigo-700);
+  color: #FFFFFF;
+}
+
+.work-card,
+.story-card,
+.dashboard-wrap,
+.contact-card,
+.contact-strip {
+  border-color: var(--twilight-indigo-200);
+  box-shadow:
+    0 18px 44px rgba(15, 21, 36, 0.09),
+    0 5px 14px rgba(75, 103, 180, 0.05);
+}
+
+.story-card:nth-child(1) {
+  background: #FFFFFF;
+}
+
+.story-card:nth-child(2) {
+  background: var(--twilight-indigo-100);
+}
+
+.story-card:nth-child(2) h3 {
+  color: var(--twilight-indigo-800);
+}
+
+.story-card:nth-child(3) {
+  background: var(--twilight-indigo-700);
+}
+
+.story-card:nth-child(3) h3,
+.story-card:nth-child(3) p {
+  color: #FFFFFF;
+}
+
+.story-card:nth-child(3) p {
+  opacity: 0.80;
+}
+
+.dashboard-toolbar {
+  background: #FFFFFF;
+}
+
+.dashboard-embed,
+.dashboard-frame {
+  background: var(--twilight-indigo-50);
+}
+
+.app-tab {
+  background: #FFFFFF;
+  color: var(--twilight-indigo-700);
+  border: 1px solid var(--twilight-indigo-200) !important;
+  box-shadow:
+    0 10px 24px rgba(15, 21, 36, 0.06),
+    0 3px 10px rgba(75, 103, 180, 0.05);
+}
+
+.app-tab:hover {
+  background: var(--twilight-indigo-100);
+  color: var(--twilight-indigo-800);
+  border-color: var(--twilight-indigo-300) !important;
+}
+
+.app-tab.active {
+  background: var(--twilight-indigo-600);
+  color: #FFFFFF;
+  border-color: var(--twilight-indigo-600) !important;
+  box-shadow:
+    0 14px 30px rgba(60, 82, 144, 0.22),
+    0 4px 12px rgba(75, 103, 180, 0.08);
+}
+
+.app-tab:active {
+  background: var(--twilight-indigo-800);
+}
+
+.app-screen img,
+.project-cover,
+.work-cover {
+  box-shadow:
+    0 16px 38px rgba(15, 21, 36, 0.12),
+    0 5px 14px rgba(75, 103, 180, 0.07);
+}
+
+.contact-card,
+.contact-strip {
+  background:
+    linear-gradient(135deg, var(--twilight-indigo-100), var(--twilight-indigo-50));
+}
+
+.contact-card::before,
+.contact-strip::before {
+  background: var(--twilight-indigo-500);
+}
+
+.back-link,
+.footer-links a {
+  color: var(--twilight-indigo-600);
+}
+
+.back-link:hover,
+.footer-links a:hover {
+  color: var(--twilight-indigo-500);
+}
+
+.footer {
+  border-top-color: var(--twilight-indigo-200);
+}
+
+.menu-button {
+  background: var(--twilight-indigo-100);
+  color: var(--twilight-indigo-800);
+  border-color: var(--twilight-indigo-200);
+}
+
+.menu-button:hover {
+  background: var(--twilight-indigo-200);
+}
+
 </style>
 </head>
 <body>
