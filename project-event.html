@@ -1142,6 +1142,40 @@ h3 {
   background: var(--twilight-indigo-200);
 }
 
+
+/* Project summary and contact refinements */
+.project-summary {
+  display: grid;
+  gap: 8px;
+  max-width: 720px;
+  margin-top: 22px;
+}
+
+.project-summary > div {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.project-summary strong {
+  color: #2D3E6C;
+}
+
+.project-summary span {
+  color: var(--muted);
+}
+
+.contact-actions {
+  align-items: center;
+}
+
+.contact-email {
+  font-size: 12px;
+}
+
 </style>
 </head>
 <body>
@@ -1152,7 +1186,7 @@ h3 {
       <span class="brand-mark">N</span>
       <span class="brand-copy">
         <strong>Norah</strong>
-        <span>HR & Digital Solutions</span>
+        <span>HR Operations & Process Improvement</span>
       </span>
     </a>
     <div class="nav-links" id="navLinks">
@@ -1171,29 +1205,33 @@ h3 {
     <span class="kicker">Project</span>
     <h1>Event Management System</h1>
     <p>
-      A project that brings event reporting and day-to-day event management together
-      in one clearer experience.
+      A connected Power Apps and Power BI solution for managing event records,
+      participants, requests, feedback, preparation tasks, and reporting.
     </p>
     <div class="project-tags">
-      <span>Interactive Dashboard</span>
-      <span>Power App</span>
-      <span>Workflow</span>
+      <span>Power BI</span>
+      <span>Power Apps</span>
+      <span>Power Automate</span>
+    </div>
+    <div class="project-summary">
+      <div><strong>Role</strong><span>Designed, Built &amp; Implemented</span></div>
+      <div><strong>Tools</strong><span>Power Apps, Power BI, Power Automate</span></div>
     </div>
   </header>
 
   <section class="section section-soft">
     <div class="shell story-grid">
       <article class="story-card">
-        <h3>The need</h3>
-        <p>Event information and follow-up were spread across different files and messages.</p>
+        <h3>The challenge</h3>
+        <p>Event information, preparation tasks, requests, and feedback were managed across separate files, messages, and manual updates.</p>
       </article>
       <article class="story-card">
-        <h3>What I built</h3>
-        <p>A dashboard for visibility and an app for managing events, requests, and feedback.</p>
+        <h3>The solution</h3>
+        <p>I built a connected Power Apps and Power BI system that centralizes event records, participants, requests, feedback, preparation tasks, and reporting.</p>
       </article>
       <article class="story-card">
-        <h3>My part</h3>
-        <p>I reviewed the process, shaped the solution, built it, tested it, and improved it.</p>
+        <h3>My role</h3>
+        <p>I handled the project from start to finish. I planned the structure, designed and built the app and dashboard, created the workflows, connected the data, tested every part, and improved the final experience.</p>
       </article>
     </div>
   </section>
@@ -1247,12 +1285,13 @@ h3 {
   <section class="section">
     <div class="shell contact-strip">
       <div>
-        <h3>Resume & contact</h3>
-        <p>For professional opportunities, reach me by email or LinkedIn.</p>
+        <h3>Resume &amp; contact</h3>
+        <p>For professional opportunities or inquiries, you can reach me through email or LinkedIn.</p>
       </div>
-      <div class="button-row">
-        <a class="button button-primary" href="assets/Norah_Resume.pdf" target="_blank">Resume</a>
-        <a class="button button-secondary" href="mailto:norahalsubaie@norah.my">Email</a>
+      <div class="button-row contact-actions">
+        <a class="button button-primary" href="assets/Norah_Resume.pdf" target="_blank">View resume</a>
+        <a class="button button-secondary contact-email" href="mailto:norahalsubaie@norah.my">Email</a>
+        <a class="button button-secondary" href="https://www.linkedin.com/in/norah-a-a1b899357/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </section>
@@ -1263,7 +1302,7 @@ h3 {
     <span>© <span id="year"></span> Norah</span>
     <div class="footer-links">
       <a href="mailto:norahalsubaie@norah.my">Email</a>
-      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/norah-a-a1b899357/" target="_blank">LinkedIn</a>
       <a href="assets/Norah_Resume.pdf" target="_blank">Resume</a>
     </div>
   </div>

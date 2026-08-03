@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Norah's personal HR and digital solutions portfolio.">
+<meta name="description" content="Norah's portfolio in HR operations, process improvement, and practical digital tools.">
 <title>Norah | Portfolio</title>
 <style>
 :root {
@@ -908,6 +908,124 @@ h3 {
   .personal-note{min-height:540px}
 }
 
+
+/* Final homepage refinements */
+.note-card {
+  left: 58px;
+  right: 58px;
+  top: 82px;
+  padding: 26px;
+  background: linear-gradient(145deg, #4B67B4, #3C5290);
+  box-shadow:
+    0 18px 42px rgba(60, 82, 144, 0.18),
+    0 5px 14px rgba(15, 21, 36, 0.08);
+}
+
+.note-card h3 {
+  font-size: 27px;
+}
+
+.note-card small {
+  color: #DBE1F0;
+}
+
+.note-card p {
+  color: #EDF0F7;
+}
+
+.note-tags span {
+  background: rgba(237, 240, 247, 0.14);
+  color: #FFFFFF;
+}
+
+.note-tags span:nth-child(2) {
+  background: rgba(183, 194, 225, 0.22);
+}
+
+.note-tags span:nth-child(3) {
+  background: rgba(147, 164, 210, 0.24);
+}
+
+.project-info,
+.project-summary {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 22px;
+}
+
+.project-info > div,
+.project-summary > div {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.project-info strong,
+.project-summary strong {
+  color: #2D3E6C;
+}
+
+.project-info span,
+.project-summary span {
+  color: var(--muted);
+}
+
+.about-shapes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.about-shapes span {
+  display: block;
+  height: 9px;
+  border-radius: 999px;
+}
+
+.about-shapes span:nth-child(1) {
+  width: 34px;
+  background: #4B67B4;
+}
+
+.about-shapes span:nth-child(2) {
+  width: 18px;
+  background: #93A4D2;
+}
+
+.about-shapes span:nth-child(3) {
+  width: 9px;
+  background: #1E2948;
+}
+
+.contact-actions {
+  align-items: center;
+}
+
+.contact-email {
+  font-size: 12px;
+}
+
+@media (max-width: 620px) {
+  .note-card {
+    left: 30px;
+    right: 30px;
+    top: 72px;
+    padding: 24px;
+  }
+
+  .note-card h3 {
+    font-size: 26px;
+  }
+
+  .project-info > div {
+    grid-template-columns: 50px minmax(0, 1fr);
+  }
+}
+
 </style>
 </head>
 <body>
@@ -918,7 +1036,7 @@ h3 {
       <span class="brand-mark">N</span>
       <span class="brand-copy">
         <strong>Norah</strong>
-        <span>HR & Digital Solutions</span>
+        <span>HR Operations & Process Improvement</span>
       </span>
     </a>
     <div class="nav-links" id="navLinks">
@@ -934,11 +1052,11 @@ h3 {
 <main>
   <section class="shell hero">
     <div class="hero-copy">
-      <span class="kicker">HR · Process Improvement · Analytics</span>
+      <span class="kicker">HR Operations · Process Improvement · Digital Tools</span>
       <h1>Hi, I’m Norah.</h1>
       <p class="lead">
-        I work in HR and enjoy turning everyday process challenges into clear,
-        practical digital experiences.
+        I work in HR and improve everyday processes by organizing information,
+        simplifying follow-up, and building practical digital tools.
       </p>
       <div class="button-row">
         <a class="button button-primary" href="work.html">View my work</a>
@@ -949,14 +1067,14 @@ h3 {
     <div class="personal-note">
       <div class="note-card">
         <small>What I focus on</small>
-        <h3>Making HR work simpler and easier to follow.</h3>
+        <h3>Making everyday work clearer and easier to manage.</h3>
         <p>
-          I combine process understanding, reporting, and digital tools to improve how work is managed.
+          I enjoy organizing information, simplifying follow-up, and creating practical tools that support daily work.
         </p>
         <div class="note-tags">
           <span>HR Operations</span>
-          <span>Dashboards</span>
           <span>Process Improvement</span>
+          <span>Digital Tools</span>
         </div>
       </div>
     </div>
@@ -972,9 +1090,13 @@ h3 {
         <span class="kicker">Selected work</span>
         <h2>Event Management System</h2>
         <p>
-          One project that brings together an interactive dashboard and a simple app
-          for managing events, requests, and follow-up.
+          A connected Power Apps and Power BI solution for managing events, participants,
+          requests, feedback, preparation tasks, and reporting.
         </p>
+        <div class="project-info">
+          <div><strong>Role</strong><span>Designed, Built &amp; Implemented</span></div>
+          <div><strong>Tools</strong><span>Power Apps, Power BI, Power Automate</span></div>
+        </div>
         <a class="button button-primary" href="project-event.html">View project</a>
       </div>
     </div>
@@ -983,22 +1105,26 @@ h3 {
   <section class="section" id="about">
     <div class="shell about-mini">
       <div>
-        <span class="kicker">About me</span>
+        <div class="about-shapes" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
         <h2>About me</h2>
         <p>
-          I work in HR and enjoy improving processes, organizing information,
-          and creating practical tools that make everyday work easier.
+          My experience includes HR operations, employee services, records verification,
+          and employee engagement. I also use Power BI and Power Apps to improve visibility
+          and simplify routine work.
         </p>
       </div>
 
       <div class="contact-card">
         <div>
-          <h3>Resume & contact</h3>
-          <p>For professional opportunities, reach me by email or LinkedIn.</p>
+          <h3>Resume &amp; contact</h3>
+          <p>For professional opportunities or inquiries, you can reach me through email or LinkedIn.</p>
         </div>
-        <div class="button-row">
-          <a class="button button-primary" href="assets/Norah_Resume.pdf" target="_blank">Resume</a>
-          <a class="button button-secondary" href="mailto:norahalsubaie@norah.my">Email</a>
+        <div class="button-row contact-actions">
+          <a class="button button-primary" href="assets/Norah_Resume.pdf" target="_blank">View resume</a>
+          <a class="button button-secondary contact-email" href="mailto:norahalsubaie@norah.my">Email</a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/norah-a-a1b899357/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
     </div>
@@ -1010,7 +1136,7 @@ h3 {
     <span>© <span id="year"></span> Norah</span>
     <div class="footer-links">
       <a href="mailto:norahalsubaie@norah.my">Email</a>
-      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/norah-a-a1b899357/" target="_blank">LinkedIn</a>
       <a href="assets/Norah_Resume.pdf" target="_blank">Resume</a>
     </div>
   </div>

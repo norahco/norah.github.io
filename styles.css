@@ -1951,3 +1951,157 @@ h3 {
 .menu-button:hover {
   background: var(--twilight-indigo-200);
 }
+
+
+
+/* Final homepage refinements */
+.note-card {
+  left: 58px;
+  right: 58px;
+  top: 82px;
+  padding: 26px;
+  background: linear-gradient(145deg, #4B67B4, #3C5290);
+  box-shadow:
+    0 18px 42px rgba(60, 82, 144, 0.18),
+    0 5px 14px rgba(15, 21, 36, 0.08);
+}
+
+.note-card h3 {
+  font-size: 27px;
+}
+
+.note-card small {
+  color: #DBE1F0;
+}
+
+.note-card p {
+  color: #EDF0F7;
+}
+
+.note-tags span {
+  background: rgba(237, 240, 247, 0.14);
+  color: #FFFFFF;
+}
+
+.note-tags span:nth-child(2) {
+  background: rgba(183, 194, 225, 0.22);
+}
+
+.note-tags span:nth-child(3) {
+  background: rgba(147, 164, 210, 0.24);
+}
+
+.project-info,
+.project-summary {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 22px;
+}
+
+.project-info > div,
+.project-summary > div {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.project-info strong,
+.project-summary strong {
+  color: #2D3E6C;
+}
+
+.project-info span,
+.project-summary span {
+  color: var(--muted);
+}
+
+.about-shapes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.about-shapes span {
+  display: block;
+  height: 9px;
+  border-radius: 999px;
+}
+
+.about-shapes span:nth-child(1) {
+  width: 34px;
+  background: #4B67B4;
+}
+
+.about-shapes span:nth-child(2) {
+  width: 18px;
+  background: #93A4D2;
+}
+
+.about-shapes span:nth-child(3) {
+  width: 9px;
+  background: #1E2948;
+}
+
+.contact-actions {
+  align-items: center;
+}
+
+.contact-email {
+  font-size: 12px;
+}
+
+@media (max-width: 620px) {
+  .note-card {
+    left: 30px;
+    right: 30px;
+    top: 72px;
+    padding: 24px;
+  }
+
+  .note-card h3 {
+    font-size: 26px;
+  }
+
+  .project-info > div {
+    grid-template-columns: 50px minmax(0, 1fr);
+  }
+}
+
+
+
+/* Project summary and contact refinements */
+.project-summary {
+  display: grid;
+  gap: 8px;
+  max-width: 720px;
+  margin-top: 22px;
+}
+
+.project-summary > div {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.project-summary strong {
+  color: #2D3E6C;
+}
+
+.project-summary span {
+  color: var(--muted);
+}
+
+.contact-actions {
+  align-items: center;
+}
+
+.contact-email {
+  font-size: 12px;
+}
